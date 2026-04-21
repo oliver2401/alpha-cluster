@@ -53,4 +53,4 @@ spec:
         tls:
         - secretName: grafana-tls-secret
           hosts:
-          - grs.alphacluster.net
+            - grs.alphacluster.net
