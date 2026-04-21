@@ -36,14 +36,8 @@ spec:
         ##
         enabled: true
 
-        ## IngressClassName for Grafana Ingress.
-        ## Should be provided if Ingress is enable.
-        ##
         ingressClassName: traefik
 
-        ## Hostnames.
-        ## Must be provided if Ingress is enable.
-        ##
         hosts:
           - grs.alphacluster.net
 
@@ -51,6 +45,6 @@ spec:
         ## Secret must be manually created in the namespace
         ##
         tls:
-        - secretName: grafana-tls-secret
-          hosts:
-            - grs.alphacluster.net
+          - secretName: grafana-tls-secret
+            hosts:
+              - grs.alphacluster.net
